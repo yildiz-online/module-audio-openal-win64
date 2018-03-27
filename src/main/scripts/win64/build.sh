@@ -28,5 +28,9 @@ rm -r libsndfile
 rm -r openal
 rm -r physicsfs
 rm -r alsa
+rm -r java
+rm libgcc_s_seh-1.dll
+rm libstdc++-6.dll
+rm mingw-toolchain.cmake
 
 return $r1

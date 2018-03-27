@@ -46,6 +46,10 @@
     <version>2.0.0</version>
   </parent>
 
+  <properties>
+    <nativeEnv>win64</nativeEnv>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>be.yildiz-games</groupId>
@@ -133,5 +137,14 @@
       </build>
     </profile>
   </profiles>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>exec-maven-plugin</artifactId>
+        <groupId>org.codehaus.mojo</groupId>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
