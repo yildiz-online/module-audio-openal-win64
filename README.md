@@ -1,7 +1,7 @@
-# Yildiz-Engine module-audio-openal.
+# Yildiz-Engine module-audio-openal-win64.
 
 This is the official repository of the OpenAl Module, part of the Yildiz-Engine project.
-The openAl module is an implementation of the audio-module, based on OpenAl-soft library.
+The openAl module is an implementation of the audio-module, based on OpenAl-soft library for windows 64.
 
 ## Features
 
@@ -25,7 +25,7 @@ Wiki:
 https://yildiz.atlassian.net/wiki
 
 Quality report:
-https://sonarqube.com/overview?id=be.yildiz-games:module-audio-openal
+https://sonarqube.com/overview?id=be.yildiz-games:module-audio-openal-win64
 
 ## License
 
@@ -38,24 +38,10 @@ Go to your root directory, where you POM file is located.
 
 Then invoke maven
 
-for windows:
-
-	mvn clean install -Denv=win32 -Pnative
-	
-for linux:
-
-	mvn clean install -Denv=linux64 -Pnative
+	mvn clean install
 
 
-This will compile the source code, then run the unit tests, and finally build a jar file and DLL/SO for the environment you chose.
-
-This can only be done on linux, window does not support cross compilation.
-
-To build the linux artifact, some libraries must be installed:
-
-	apt-get install openal-dev
-	apt-get install physfs-dev
-	apt-get install libsndfile-dev
+This will compile the source code, then run the unit tests, and finally build a jar file and DLL.
 	
 To build the windows artifact, prebuilt libraries are provided.
 
@@ -63,26 +49,13 @@ To build the windows artifact, prebuilt libraries are provided.
 
 In your maven project, add the dependency
 
-for windows:
-
 ```xml
 <dependency>
     <groupId>be.yildiz-games</groupId>
-    <artifactId>module-audio-openal</artifactId>
-    <version>1.0.6</version>
-	<classifier>win32</classifier>
+    <artifactId>module-audio-openal-win64</artifactId>
+    <version>LATEST</version>
 </dependency>
 ```
 
-for linux:
-
-```xml
-<dependency>
-    <groupId>be.yildiz-games</groupId>
-    <artifactId>module-audio-openal</artifactId>
-    <version>1.0.6</version>
-	<classifier>linux64</classifier>
-</dependency>
-```
 ## Contact
 Owner of this repository: Grégory Van den Borre
