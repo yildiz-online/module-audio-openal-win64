@@ -61,7 +61,6 @@
   <profiles>
     <profile>
       <id>build</id>
-      <activation><activeByDefault>true</activeByDefault></activation>
       <dependencies>
         <dependency>
           <groupId>be.yildiz-games</groupId>
