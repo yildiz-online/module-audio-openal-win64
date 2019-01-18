@@ -46,6 +46,7 @@ cmake . \
 -DCMAKE_TOOLCHAIN_FILE=mingw-toolchain.cmake
 
 make
+r1=$?
 
 cp openal/win64/bin/OpenAL32.dll ../../../../target/classes/win64/OpenAL32.dll
 cp physicsfs/win64/bin/libphysfs.dll ../../../../target/classes/win64/libphysfs.dll
@@ -66,3 +67,5 @@ rm -r java
 rm libgcc_s_seh-1.dll
 rm libstdc++-6.dll
 rm mingw-toolchain.cmake
+
+return $r1
