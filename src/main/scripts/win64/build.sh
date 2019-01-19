@@ -17,13 +17,13 @@ echo "    BLOCK \"StringFileInfo\"" >> version.rc
 echo "    BEGIN" >> version.rc
 echo "        BLOCK \"040904b0\"" >> version.rc
 echo "        BEGIN" >> version.rc
-echo "            VALUE \"FileDescription\", \"Yildiz-Engine Audio engine with OpenAL implementation.\"" >> version.rc
+echo "            VALUE \"FileDescription\", \"Yildiz-Engine Audio engine with OpenAL implementation\"" >> version.rc
 echo "            VALUE \"FileVersion\", \"$VERSION,0\"" | tr . , >> version.rc
-echo "            VALUE \"InternalName\", \"libyildizopenal.dll\\\0\"" >> version.rc
-echo "            VALUE \"LegalCopyright\", \"Copyright (c) 2019 Gregory Van den Borre\\\0\"" >> version.rc
-echo "            VALUE \"OriginalFilename\", \"libyildizopenal.dll\\\0\"" >> version.rc
-echo "            VALUE \"CompanyName\", \"Yildiz-Games\\\0\"" >> version.rc
-echo "            VALUE \"ProductName\", \"Yildiz-Engine Audio OpenAL module.\\\0\"" >> version.rc
+echo "            VALUE \"InternalName\", \"libyildizopenal.dll\"" >> version.rc
+echo "            VALUE \"LegalCopyright\", \"Copyright (c) 2019 Gregory Van den Borre\"" >> version.rc
+echo "            VALUE \"OriginalFilename\", \"libyildizopenal.dll\"" >> version.rc
+echo "            VALUE \"CompanyName\", \"Yildiz-Games\"" >> version.rc
+echo "            VALUE \"ProductName\", \"Yildiz-Engine Audio OpenAL module\"" >> version.rc
 echo "            VALUE \"ProductVersion\", \"$VERSION,0\"" | tr . , >> version.rc
 echo "        END" >> version.rc
 echo "    END" >> version.rc
