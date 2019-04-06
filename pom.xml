@@ -74,8 +74,8 @@
         </dependency>
         <dependency>
           <groupId>be.yildiz-games</groupId>
-          <artifactId>component-native-physicsfs</artifactId>
-          <version>3.0.1.1</version>
+          <artifactId>module-vfs-physfs-win64</artifactId>
+          <version>1.0.0-SNAPSHOT</version>
         </dependency>
         <dependency>
           <groupId>be.yildiz-games</groupId>
@@ -107,6 +107,12 @@
                       <groupId>be.yildiz-games</groupId>
                       <artifactId>component-native-openal</artifactId>
                       <outputDirectory>src/main/scripts/win64/openal</outputDirectory>
+                      <includes>win64/**/*.*</includes>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>be.yildiz-games</groupId>
+                      <artifactId>module-vfs-physicsfs-win64</artifactId>
+                      <outputDirectory>src/main/scripts/win64/physicsfs</outputDirectory>
                       <includes>win64/**/*.*</includes>
                     </artifactItem>
                     <artifactItem>
