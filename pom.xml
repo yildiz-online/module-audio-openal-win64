@@ -117,12 +117,6 @@
                     </artifactItem>
                     <artifactItem>
                       <groupId>be.yildiz-games</groupId>
-                      <artifactId>component-native-physicsfs</artifactId>
-                      <outputDirectory>src/main/scripts/win64/physicsfs</outputDirectory>
-                      <includes>win64/**/*.*</includes>
-                    </artifactItem>
-                    <artifactItem>
-                      <groupId>be.yildiz-games</groupId>
                       <artifactId>component-native-alsa</artifactId>
                       <outputDirectory>src/main/scripts/win64/alsa</outputDirectory>
                       <includes>win64/**/*.*</includes>
