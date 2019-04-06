@@ -41,7 +41,7 @@ cmake . \
 -DOPENAL_INCLUDE_DIR="openal/win64/include/AL" \
 -DOPENAL_LIBRARY="openal/win64/lib/libopenal.dll" \
 -DPHYSFS_INCLUDE_DIR="physicsfs/win64/include" \
--DPHYSFS_LIBRARY="physicsfs/win64/lib/libphysfs.dll" \
+-DPHYSFS_LIBRARY="physicsfs/win64/lib/libyildizphysfs.dll" \
 -DLIBRARY_OUTPUT_PATH="../../../../target/classes/win64" \
 -DCMAKE_TOOLCHAIN_FILE=mingw-toolchain.cmake
 
@@ -49,7 +49,7 @@ make
 r1=$?
 
 cp openal/win64/bin/OpenAL32.dll ../../../../target/classes/win64/OpenAL32.dll
-cp physicsfs/win64/bin/libphysfs.dll ../../../../target/classes/win64/libphysfs.dll
+cp physicsfs/win64/bin/libyildizphysfs.dll ../../../../target/classes/win64/libyildizphysfs.dll
 cp libsndfile/win64/bin/libsndfile-1.dll ../../../../target/classes/win64/libsndfile-1.dll
 cp libsndfile/win64/bin/libFLAC-8.dll ../../../../target/classes/win64/libFLAC-8.dll
 cp libstdc++-6.dll ../../../../target/classes/win64/libstdc++-6.dll
