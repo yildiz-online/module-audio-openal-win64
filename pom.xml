@@ -48,13 +48,18 @@
 
   <properties>
     <nativeEnv>win64</nativeEnv>
+    <module-openal.version>2.0.8-SNAPSHOT</module-openal.version>
+    <module-physfs.version>1.0.0-SNAPSHOT</module-physfs.version>
+    <component-alsa.version>1.1.5.3</component-alsa.version>
+    <component-openal.version>1.18.1.1</component-openal.version>
+    <component-libsndfile.version>1.0.29.2</component-libsndfile.version>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>be.yildiz-games</groupId>
       <artifactId>module-audio-openal</artifactId>
-      <version>2.0.8-SNAPSHOT</version>
+      <version>${module-openal.version}</version>
     </dependency>
   </dependencies>
 
@@ -65,22 +70,22 @@
         <dependency>
           <groupId>be.yildiz-games</groupId>
           <artifactId>component-native-openal</artifactId>
-          <version>1.18.1.1</version>
+          <version>${component-openal.version}</version>
         </dependency>
         <dependency>
           <groupId>be.yildiz-games</groupId>
           <artifactId>component-native-libsndfile</artifactId>
-          <version>1.0.29.2</version>
+          <version>${component-libsndfile.version}</version>
         </dependency>
         <dependency>
           <groupId>be.yildiz-games</groupId>
           <artifactId>module-vfs-physfs-win64</artifactId>
-          <version>1.0.0-SNAPSHOT</version>
+          <version>${module-physfs.version}</version>
         </dependency>
         <dependency>
           <groupId>be.yildiz-games</groupId>
           <artifactId>component-native-alsa</artifactId>
-          <version>1.1.5.3</version>
+          <version>${component-alsa.version}</version>
         </dependency>
       </dependencies>
       <build>
@@ -100,30 +105,35 @@
                     <artifactItem>
                       <groupId>be.yildiz-games</groupId>
                       <artifactId>module-audio-openal</artifactId>
+                      <version>${module-openal.version}</version>
                       <outputDirectory>src/</outputDirectory>
                       <includes>main/**/*.*</includes>
                     </artifactItem>
                     <artifactItem>
                       <groupId>be.yildiz-games</groupId>
                       <artifactId>component-native-openal</artifactId>
+                      <version>${component-openal.version}</version>
                       <outputDirectory>src/main/scripts/win64/openal</outputDirectory>
                       <includes>win64/**/*.*</includes>
                     </artifactItem>
                     <artifactItem>
                       <groupId>be.yildiz-games</groupId>
-                      <artifactId>module-vfs-physicsfs-win64</artifactId>
+                      <artifactId>module-vfs-physfs-win64</artifactId>
+                      <version>${module-physfs.version}</version>
                       <outputDirectory>src/main/scripts/win64/physicsfs</outputDirectory>
                       <includes>win64/**/*.*</includes>
                     </artifactItem>
                     <artifactItem>
                       <groupId>be.yildiz-games</groupId>
                       <artifactId>component-native-libsndfile</artifactId>
+                      <version>${component-libsndfile.version}</version>
                       <outputDirectory>src/main/scripts/win64/libsndfile</outputDirectory>
                       <includes>win64/**/*.*</includes>
                     </artifactItem>
                     <artifactItem>
                       <groupId>be.yildiz-games</groupId>
                       <artifactId>component-native-alsa</artifactId>
+                      <version>${component-alsa.version}</version>
                       <outputDirectory>src/main/scripts/win64/alsa</outputDirectory>
                       <includes>win64/**/*.*</includes>
                     </artifactItem>
