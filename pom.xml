@@ -50,6 +50,7 @@
     <nativeEnv>win64</nativeEnv>
     <module-openal.version>2.0.8-SNAPSHOT</module-openal.version>
     <module-physfs.version>1.0.0-SNAPSHOT</module-physfs.version>
+    <component-physfs.version>3.0.1.1</component-physfs.version>
     <component-alsa.version>1.1.5.3</component-alsa.version>
     <component-openal.version>1.18.1.1</component-openal.version>
     <component-libsndfile.version>1.0.29.2</component-libsndfile.version>
@@ -81,6 +82,11 @@
           <groupId>be.yildiz-games</groupId>
           <artifactId>module-vfs-physfs-win64</artifactId>
           <version>${module-physfs.version}</version>
+        </dependency>
+        <dependency>
+          <groupId>be.yildiz-games</groupId>
+          <artifactId>component-native-physcisfs</artifactId>
+          <version>${component-physfs.version}</version>
         </dependency>
         <dependency>
           <groupId>be.yildiz-games</groupId>
@@ -121,6 +127,13 @@
                       <artifactId>module-vfs-physfs-win64</artifactId>
                       <version>${module-physfs.version}</version>
                       <outputDirectory>src/main/scripts/win64/physicsfs</outputDirectory>
+                      <includes>win64/**/*.*</includes>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>be.yildiz-games</groupId>
+                      <artifactId>component-native-physcisfs</artifactId>
+                      <version>${component-physfs.version}</version>
+                      <outputDirectory>src/main/scripts/win64/physicsfs-native</outputDirectory>
                       <includes>win64/**/*.*</includes>
                     </artifactItem>
                     <artifactItem>
