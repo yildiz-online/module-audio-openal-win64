@@ -26,5 +26,6 @@ file(
 add_library(yildizopenal SHARED ${source_files} ${CMAKE_SOURCE_DIR}/version.rc)
 
 target_link_libraries(yildizopenal ${CMAKE_SOURCE_DIR}/openal/win64/lib/libOpenAL32.dll.a)
+target_link_libraries(yildizopenal ${CMAKE_SOURCE_DIR}/physicsfs-native/win64/lib/libphysfs.a)
 target_link_libraries(yildizopenal ${CMAKE_SOURCE_DIR}/physicsfs/win64/libyildizphysfs.dll.a)
 target_link_libraries(yildizopenal ${CMAKE_SOURCE_DIR}/libsndfile/win64/lib/liblibsndfile-1.dll.a)
