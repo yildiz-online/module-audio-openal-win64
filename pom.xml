@@ -131,7 +131,7 @@
                     </artifactItem>
                     <artifactItem>
                       <groupId>be.yildiz-games</groupId>
-                      <artifactId>component-native-physcisfs</artifactId>
+                      <artifactId>component-native-physicsfs</artifactId>
                       <version>${component-physfs.version}</version>
                       <outputDirectory>src/main/scripts/win64/physicsfs-native</outputDirectory>
                       <includes>win64/**/*.*</includes>
