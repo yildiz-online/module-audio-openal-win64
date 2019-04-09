@@ -85,7 +85,7 @@
         </dependency>
         <dependency>
           <groupId>be.yildiz-games</groupId>
-          <artifactId>component-native-physcisfs</artifactId>
+          <artifactId>component-native-physicsfs</artifactId>
           <version>${component-physfs.version}</version>
         </dependency>
         <dependency>
