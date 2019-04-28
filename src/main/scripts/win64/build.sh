@@ -49,7 +49,6 @@ make
 r1=$?
 
 cp openal/win64/bin/OpenAL32.dll ../../../../target/classes/win64/OpenAL32.dll
-cp physicsfs/win64/libyildizphysfs.dll ../../../../target/classes/win64/libyildizphysfs.dll
 cp libsndfile/win64/bin/libsndfile-1.dll ../../../../target/classes/win64/libsndfile-1.dll
 cp libsndfile/win64/bin/libFLAC-8.dll ../../../../target/classes/win64/libFLAC-8.dll
 cp libstdc++-6.dll ../../../../target/classes/win64/libstdc++-6.dll
