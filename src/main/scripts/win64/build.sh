@@ -54,17 +54,4 @@ cp libsndfile/win64/bin/libFLAC-8.dll ../../../../target/classes/win64/libFLAC-8
 cp libstdc++-6.dll ../../../../target/classes/win64/libstdc++-6.dll
 cp libgcc_s_seh-1.dll ../../../../target/classes/win64/libgcc_s_seh-1.dll
 
-rm -R CMakeFiles
-rm CMakeCache.txt
-rm cmake_install.cmake
-rm Makefile
-rm -r libsndfile
-rm -r openal
-rm -r physicsfs
-rm -r alsa
-rm -r java
-rm libgcc_s_seh-1.dll
-rm libstdc++-6.dll
-rm mingw-toolchain.cmake
-
 exit $r1
