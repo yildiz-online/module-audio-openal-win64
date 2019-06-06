@@ -53,7 +53,7 @@
 
   <properties>
     <nativeEnv>win64</nativeEnv>
-    <module-openal.version>2.0.12</module-openal.version>
+    <module-openal.version>2.0.13-SNAPSHOT</module-openal.version>
     <module-physfs-win64.version>1.0.1-SNAPSHOT</module-physfs-win64.version>
     <component-physfs.version>3.0.1.1</component-physfs.version>
     <component-alsa.version>1.1.5.3</component-alsa.version>
