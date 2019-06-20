@@ -54,4 +54,4 @@ cp libsndfile/win64/bin/libFLAC-8.dll ../../../../target/classes/win64/libFLAC-8
 cp libstdc++-6.dll ../../../../target/classes/win64/libstdc++-6.dll
 cp libgcc_s_seh-1.dll ../../../../target/classes/win64/libgcc_s_seh-1.dll
 
-exit $r1
+exit ${r1}
