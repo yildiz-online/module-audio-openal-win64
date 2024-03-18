@@ -55,7 +55,7 @@
     <nativeEnv>win64</nativeEnv>
     <module-openal.version>2.0.13-SNAPSHOT</module-openal.version>
     <module-physfs-win64.version>1.0.1-SNAPSHOT</module-physfs-win64.version>
-    <component-physfs.version>3.0.1.1</component-physfs.version>
+    <component-physfs.version>3.0.2.1</component-physfs.version>
     <component-alsa.version>1.1.8.0</component-alsa.version>
     <component-openal.version>1.18.1.1</component-openal.version>
     <component-libsndfile.version>1.0.29.3-SNAPSHOT</component-libsndfile.version>
